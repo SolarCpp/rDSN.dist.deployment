@@ -1,16 +1,14 @@
+set(MY_PROJ_NAME dsn.dist.scheduler.providers)
+
 if (DEFINED DSN_CMAKE_INCLUDED)
 else()
-    cmake_minimum_required(VERSION 2.8.8)
-
-    set(DSN_ROOT "$ENV{DSN_ROOT}")
+    project(${MY_PROJ_NAME} C CXX)    set(DSN_ROOT "$ENV{DSN_ROOT}")
     if(NOT EXISTS "${DSN_ROOT}/")
         message(FATAL_ERROR "Please make sure that ${DSN_ROOT} exists.")
     endif()
 
     include("${DSN_ROOT}/bin/dsn.cmake")
 endif()
-
-set(MY_PROJ_NAME dsn.dist.scheduler.providers)
 
 # Source files under CURRENT project directory will be automatically included.
 # You can manually set MY_PROJ_SRC to include source files under other directories.
