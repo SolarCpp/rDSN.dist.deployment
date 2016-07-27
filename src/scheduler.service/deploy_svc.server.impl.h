@@ -2,7 +2,7 @@
 
 # include "deploy_svc.server.h"
 # include "deploy_svc.types.h"
-# include <dsn/dist/cluster_scheduler.h>
+# include "cluster_scheduler.h"
 
 # include <unordered_map>
 

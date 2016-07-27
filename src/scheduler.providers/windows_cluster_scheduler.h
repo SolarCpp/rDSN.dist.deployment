@@ -34,7 +34,7 @@
 
 # pragma once
 
-# include <dsn/dist/cluster_scheduler.h>
+# include "cluster_scheduler.h"
 # include <unordered_map>
 # include "machine_pool_mgr.h"
 

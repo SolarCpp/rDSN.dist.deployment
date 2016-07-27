@@ -7,7 +7,7 @@
 #ifndef deploy_svc_TYPES_H
 #define deploy_svc_TYPES_H
 
-#include <dsn/dist/cluster_scheduler.h>
+#include "cluster_scheduler.h"
 #include <iosfwd>
 
 #include <thrift/Thrift.h>

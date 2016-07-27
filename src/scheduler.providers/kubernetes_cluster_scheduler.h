@@ -35,7 +35,7 @@
 
 # pragma once
 
-# include <dsn/dist/cluster_scheduler.h>
+# include "cluster_scheduler.h"
 # include <unordered_map>
 using namespace ::dsn::service;
 
