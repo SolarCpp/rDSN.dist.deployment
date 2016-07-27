@@ -37,7 +37,6 @@ file(GLOB
     "${CMAKE_CURRENT_SOURCE_DIR}/*_nodes"
     "${CMAKE_CURRENT_SOURCE_DIR}/*.sh"
     "${CMAKE_CURRENT_SOURCE_DIR}/*.cmd"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../../../scripts/windows/echoc.exe"
 )
 
 # Extra files that will be installed
@@ -48,4 +47,3 @@ dsn_add_executable()
 add_custom_target( docker 
     COMMAND docker build -t "${MY_PROJ_NAME}-image" "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${MY_PROJ_NAME}")
 add_dependencies( docker "${MY_PROJ_NAME}")
-add_dependencies("${MY_PROJ_NAME}" rapidjson_header)
