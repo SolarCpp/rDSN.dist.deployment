@@ -1,3 +1,3 @@
-add_subdirectory(scheduler_providers)
-add_subdirectory(kubernetes)
-add_subdirectory(docker)
+add_subdirectory(scheduler.providers)
+add_subdirectory(scheduler.service)
+
