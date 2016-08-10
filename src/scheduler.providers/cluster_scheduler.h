@@ -37,7 +37,6 @@
 # pragma once
 
 # include <dsn/service_api_cpp.h>
-# include <dsn/dist/error_code.h>
 # include <string>
 # include <functional>
 # include <memory>
@@ -47,7 +46,9 @@ namespace dsn
 {
     namespace dist
     {
-        
+		// --------- error code for scheduler -----
+		// e.g., DEFINE_ERR_CODE(ERR_EXPIRED)
+
         // ---------- thread pool for scheduler -------------
         DEFINE_THREAD_POOL_CODE(THREAD_POOL_SCHEDULER_LONG)
 
